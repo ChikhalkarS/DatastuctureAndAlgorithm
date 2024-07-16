@@ -7,15 +7,14 @@ public class PalindromeNumber {
     }
 
     private static boolean isPalindrome(int number) {
-        int reversedNumber =0;
+        int reversedNumber = 0;
         int originalNumner = number;
-        while(number !=0)
-        {
+        while (number != 0) {
             int digit = number % 10;
             reversedNumber = reversedNumber * 10 + digit;
             number /= 10;
         }
 
-        return reversedNumber==originalNumner;
+        return reversedNumber == originalNumner;
     }
 }
